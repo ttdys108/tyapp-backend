@@ -9,6 +9,8 @@ import com.ttdys.service.LoginService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
@@ -19,7 +21,7 @@ public class LoginController {
     private LoginService loginService;
 
     @PostMapping("/login")
-    public Response<TokenDTO> login(LoginDTO dto) {
+    public Response<TokenDTO> login(@RequestBody LoginDTO dto) {
         log.info("登录请求<{}>", JSON.toJSONString(dto));
         return loginService.login(dto);
     }

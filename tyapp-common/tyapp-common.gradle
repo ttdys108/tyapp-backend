@@ -4,5 +4,6 @@ dependencies {
     compile "commons-codec:commons-codec:${commonsCodecVersion}"
     compile "com.alibaba:fastjson:${fastJsonVersion}"
     compile "ch.qos.logback:logback-classic"
+    compile "com.auth0:java-jwt:${jwtVersion}"
 
 }

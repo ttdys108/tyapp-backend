@@ -21,6 +21,7 @@ ext {
     logbackVersion = '1.2.3'
     druidVersion = '1.1.17'
     mysqlVersion = '8.0.15'
+    jwtVersion = '3.11.0'
 
 }
 
@@ -46,7 +47,9 @@ allprojects {
 
     dependencies {
         annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+        testAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
         compileOnly "org.projectlombok:lombok:${lombokVersion}"
+        testCompileOnly "org.projectlombok:lombok:${lombokVersion}"
         testImplementation "junit:junit:${junitVersion}"
     }
 

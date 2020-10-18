@@ -22,6 +22,12 @@ spring:
 mybatis:
   mapper-locations: classpath:mapper/*.xml
 
+jwt:
+  issuer: tyapp
+  secret: G5SbV_B8KzrRwo3kz6LwNQ_lpUFV7t9
+
+token:
+  expires-in: 1800 #seconds
 
 ---
 spring:

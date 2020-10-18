@@ -1,4 +1,4 @@
-package com.ttdys.config;
+package com.ttdys.web.config;
 
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
 import org.springframework.context.annotation.Bean;

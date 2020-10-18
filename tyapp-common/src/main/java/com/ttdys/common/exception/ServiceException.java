@@ -5,7 +5,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class ServiceException extends RuntimeException {
+public class ServiceException extends Exception {
     private String code;
     private String msg;
 
