@@ -1,0 +1,8 @@
+dependencies {
+    compile "org.apache.commons:commons-lang3"
+    compile "org.apache.commons:commons-io:${commonsIoVersion}"
+    compile "commons-codec:commons-codec:${commonsCodecVersion}"
+    compile "com.alibaba:fastjson:${fastJsonVersion}"
+    compile "ch.qos.logback:logback-classic"
+
+}

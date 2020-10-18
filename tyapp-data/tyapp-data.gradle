@@ -1,0 +1,4 @@
+dependencies {
+    compile project(":tyapp-common")
+    compile "tk.mybatis:mapper-spring-boot-starter:${tkMybatisVersion}"
+}

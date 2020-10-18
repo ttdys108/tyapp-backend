@@ -1,0 +1,8 @@
+apply plugin: 'io.spring.dependency-management'
+
+dependencies {
+    compile project(":tyapp-service")
+    runtime "com.alibaba:druid-spring-boot-starter:${druidVersion}"
+    runtime "mysql:mysql-connector-java"
+    runtime "org.apache.commons:commons-pool2"
+}
