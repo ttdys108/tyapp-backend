@@ -31,15 +31,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .authorizeRequests()
                 .antMatchers("/user/**").hasRole("USER")
-                .anyRequest().authenticated();
+//                .anyRequest().authenticated()
+                .anyRequest().permitAll();
         //anthentication filter
         JwtAuthenticationFilter jwtFilter = new JwtAuthenticationFilter(userMapper, jwtGenerator);
         http.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
     }
 
-    @Override
-    public  void configure(WebSecurity web) throws Exception {
-        web.ignoring().antMatchers("/login", "/static/**");
-    }
+//    @Override
+//    public  void configure(WebSecurity web) throws Exception {
+//        web.ignoring().antMatchers("/login", "/static/**");
+//    }
 
 }
